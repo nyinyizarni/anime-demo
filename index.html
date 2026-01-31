@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anime Cartoon Scene</title>
+  <title>Anime Intro Scene</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      overflow: hidden;
+    }
+    .layer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
-<body style="margin:0; background:#000;">
-  <!-- Embed the SVG animation -->
-  <object type="image/svg+xml" data="anime-scene.svg" width="100%" height="100%"></object>
+<body>
+  <!-- Background -->
+  <object class="layer" type="image/svg+xml" data="anime-intro.svg"></object>
 </body>
 </html>
