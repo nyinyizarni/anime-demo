@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 400">
+  <!-- Gradient sky -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#sky)" />
+
+  <!-- Shooting stars -->
+  <line x1="700" y1="50" x2="750" y2="100" stroke="white" stroke-width="2">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;-800 400" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="600" y1="20" x2="650" y2="70" stroke="yellow" stroke-width="2">
+    <animateTransform attributeName="transform" type="translate"
+      values="0 0;-800 400" dur="7s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Rising moon -->
+  <circle cx="650" cy="350" r="50" fill="#fdfd96">
+    <animate attributeName="cy" values="350;120;350" dur="15s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Clouds drifting -->
+  <ellipse cx="200" cy="80" rx="70" ry="25" fill="white" opacity="0.8">
+    <animate attributeName="cx" values="200;900" dur="40s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="500" cy="120" rx="90" ry="30" fill="white" opacity="0.7">
+    <animate attributeName="cx" values="500;-200" dur="45s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Sparkle effects -->
+  <circle cx="300" cy="200" r="5" fill="white">
+    <animate attributeName="r" values="5;15;5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="250" r="5" fill="pink">
+    <animate attributeName="r" values="5;12;5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Anime character silhouette -->
+  <g fill="black">
+    <!-- Head -->
+    <circle cx="150" cy="280" r="40" fill="#111"/>
+    <!-- Body -->
+    <rect x="140" y="320" width="20" height="60" fill="#111"/>
+    <!-- Arms -->
+    <line x1="140" y1="330" x2="100" y2="360" stroke="#111" stroke-width="8">
+      <animate attributeName="x2" values="100;120;100" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="160" y1="330" x2="200" y2="360" stroke="#111" stroke-width="8"/>
+    <!-- Legs -->
+    <line x1="145" y1="380" x2="130" y2="420" stroke="#111" stroke-width="8"/>
+    <line x1="155" y1="380" x2="170" y2="420" stroke="#111" stroke-width="8"/>
+  </g>
+
+  <!-- Title text with glow -->
+  <text x="50%" y="95%" text-anchor="middle" font-size="40" font-family="Comic Sans MS"
+        fill="white" stroke="pink" stroke-width="2">
+    🌸 Anime Intro Scene 🌸
+    <animate attributeName="fill" values="white;pink;yellow;white" dur="6s" repeatCount="indefinite"/>
+  </text>
+</svg>
